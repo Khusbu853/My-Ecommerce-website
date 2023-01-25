@@ -7,4 +7,12 @@ This is a fully functional ecommerce website with beautiful UI and backend techn
 *  User can track the status of their product during delivery using tracker.
 *  User can directly like, share and comments on blogs using there facebook account.
 *  After payment user will get the confirmation of their of their payment.
+# Technologies  
+1.  Django (Backend)
+2.  Bootstap (Frontend)
+3.  JavaScript
+4.  Paytm Integration (Payment Method)
+
+
+
 
