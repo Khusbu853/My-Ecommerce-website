@@ -40,4 +40,14 @@ Blog-details (here you can like, share and comment the specific blog with your F
 ![blog-details](https://user-images.githubusercontent.com/84722676/214617396-31ec8c99-0f3b-4e1a-b512-db19e03a4111.jpeg)  
 # To Run This Project  
 1.  clone this project on your local machine  
-``` 
+``` git@github.com:Khusbu853/My-Ecommerce-website.git ```  
+2. create a virtual environment inside Ecommerce folder  
+``` virtualenv venv ```  
+3. activate virtual environment,(for windows)  
+``` .\venv\Scripts\activate ```  
+4.  Install 
+``` pip install pycryptodome ```  
+5. run project on your local machine
+``` python manage.py runserver ```
+
+
