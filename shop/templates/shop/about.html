@@ -1,0 +1,38 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} About Us - My Ecommerce website {% endblock %}
+{% block body %}
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="https://t3.ftcdn.net/jpg/03/18/36/10/360_F_318361051_GMxeRdcVYsHn7ayujCKZDndyj2Xnqlkx.jpg" class="d-block mx-lg-auto img-fluid" alt="img" width="800" height="600" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">About Us</h1>
+        <p class="lead">A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location.-->
+        Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary mx-3 btn-lg px-4 gap-3" ><a style="color:white"  href="/shop">Continue Shopping</a></button>
+        <button type="button" class="btn btn-outline-secondary mx-4 my-2 btn-lg px-4" ><a style="text-decoration:None"  href="/shop/contact">Contact Us</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
+
+{% block js %}
+<script>
+<!--    Find out the cart items from the local storage -->
+    if(localStorage.getItem('cart') == null){
+    var cart = {};
+    }
+    else{
+    cart = JSON.parse(localStorage.getItem('cart'));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+    }
+
+</script>
+{% endblock %}

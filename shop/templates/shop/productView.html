@@ -1,0 +1,43 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} {{product.product_name}} - My Awesome Cart  {% endblock %}
+{% block body %}
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <img src="/media/{{product.image}}" width="285px" height="300px">
+            </div>
+
+
+        </div>
+
+        <div class="col-md-8">
+            <h5>{{product.product_name}}</h5>
+            <p><b>Rs.{{product.price}}</b></p>
+            <p>{{product.desc}}</p>
+
+            <button class="btn btn-primary my-4"><a style="color:white"  href="/shop">Continue Shopping</a></button>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block js %}
+<script>
+<!--    Find out the cart items from the local storage -->
+    if(localStorage.getItem('cart') == null){
+    var cart = {};
+    }
+    else{
+    cart = JSON.parse(localStorage.getItem('cart'));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+    }
+
+</script>
+{% endblock %}
+

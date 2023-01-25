@@ -1,0 +1,74 @@
+{% extends 'shop/basic.html' %}
+{% block title %} BlogPosts - My Ecommerce website {% endblock %}
+{% block body %}
+<div class="container my-3">
+    <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4  font-italic ">
+        {{post.title}}
+      </h3>
+        <p class="blog-post-meta">January 3, 2022 by <a href="#">Dennis</a></p>
+          <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
+
+
+      <div class="blog-post my-2">
+        <h2 class="blog-post-title">{{post.head1}}</h2>
+
+        <p>{{post.content_head1}}</p>
+        <h2>{{post.head2}}</h2>
+        <p>{{post.content_head2}}</p>
+          <h3>{{post.head3}}</h3>
+        <p>{{post.content_head3}}</p>
+
+
+          <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-width="" data-numposts="1"></div>
+
+
+
+      </div>
+      <!-- /.blog-post -->
+
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">My Ecommerce website <em>is an amazing platform to buy items online</em>you can use it to buy items online</p>
+<div class="fb-share-button my-3" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fblog%2Fblogpost%2F5&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Contact Us</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div>
+</div>
+
+<footer id="sticky-footer" class="flex-shrink-0 mt-2 py-2 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright © My Ecommerce website.com</small>
+    </div>
+  </footer>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="RIv3zMEX"></script>
+{% endblock %}
+
+{% block js %}
+<script>
+<!--    Find out the cart items from the local storage -->
+    if(localStorage.getItem('cart') == null){
+    var cart = {};
+    }
+    else{
+    cart = JSON.parse(localStorage.getItem('cart'));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+    }
+</script>
+{% endblock %}
