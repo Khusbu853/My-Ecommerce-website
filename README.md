@@ -37,4 +37,7 @@ Blogs
 ![blogs](https://user-images.githubusercontent.com/84722676/214617045-8ca0dbf2-f822-4b1b-8c39-f25944507429.jpeg)  
 Blog-details (here you can like, share and comment the specific blog with your Facebook account directly)  
 
-![blog-details](https://user-images.githubusercontent.com/84722676/214617396-31ec8c99-0f3b-4e1a-b512-db19e03a4111.jpeg)
+![blog-details](https://user-images.githubusercontent.com/84722676/214617396-31ec8c99-0f3b-4e1a-b512-db19e03a4111.jpeg)  
+# To Run This Project  
+1.  clone this project on your local machine  
+``` 
