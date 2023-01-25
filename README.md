@@ -12,6 +12,23 @@ This is a fully functional ecommerce website with beautiful UI and backend techn
 2.  Bootstap (Frontend)
 3.  JavaScript
 4.  Paytm Integration (Payment Method)
+# Demonstration  
+   
+   
+   
+   
+   
+   
+
+
+
+
+https://user-images.githubusercontent.com/84722676/214635736-77c2343d-57ba-4d26-aac4-2f895db2f991.mp4
+
+
+
+   
+
 # Preview
 Home
 
